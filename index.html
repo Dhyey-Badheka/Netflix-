@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <style>
+        .whole {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bgimg {
+            position: absolute;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+        }
+
+        .net {
+            position: relative;
+            top: 25px;
+            left: 50px;
+        }
+
+        .selectl {
+            position: relative;
+            opacity: 0.9;
+            min-width: 80px;
+            padding: 10px 0px 10px 10px;
+            z-index: 1;
+            border-radius: 5px;
+            border-color: white;
+            font-size: 15px;
+            color: white;
+            top: -15px;
+            left: 1050px;
+        }
+
+        .emil {
+            position: relative;
+            min-width: 480px;
+            padding: 20px 0px 20px 10px;
+            z-index: 1;
+            border-color: white;
+            font-size: 20px;
+            color: black;
+            top: 10px;
+            left: -130px;
+        }
+
+        .signin {
+            position: relative;
+            background-color: rgb(229, 9, 20);
+            min-width: 80px;
+            padding: 5px 5px 5px 5px;
+            z-index: 1;
+            border-radius: 5px;
+            border-color: rgb(229, 9, 20);
+            font-size: 16px;
+            color: white;
+            top: -16px;
+            left: 1080px;
+        }
+
+        .start {
+            position: relative;
+            background-color: rgb(229, 9, 20);
+            min-width: 160px;
+            height: 68px;
+            width: 270px;
+            padding: 5px 5px 5px 5px;
+            z-index: 1;
+            border-color: rgb(229, 9, 20);
+            font-size: 25px;
+            color: white;
+            top: -18px;
+            left: 792px;
+        }
+
+        .hrbr {
+            background-color: #333;
+            height: 10px;
+            width: 1350px;
+            border-color: #333;
+        }
+
+        .hrbr1 {
+            background-color: #333;
+            height: 10px;
+            margin-top: -240px;
+            width: 1350px;
+            border-color: #333;
+        }
+
+        .hrbr2 {
+            background-color: #333;
+            height: 10px;
+            margin-top: -250px;
+            width: 1350px;
+            border-color: #333;
+        }
+
+        .hrbr3 {
+            background-color: #333;
+            height: 10px;
+            margin-top: 80px;
+            width: 1350px;
+            border-color: #333;
+        }
+
+        .text {
+            color: white;
+        }
+
+        .footer {
+            color: white;
+            margin-top: 50px;
+            margin-left: 200px;
+            opacity: 0.5;
+            font-size: 16px;
+        }
+
+        .bfooter {
+            color: white;
+            margin-top: 10px;
+            margin-left: 0px;
+            font-size: 13px;
+        }
+
+        .bbfooter {
+            color: white;
+            margin-top: 10px;
+            margin-left: 0px;
+            font-size: 13px;
+        }
+
+        .r1 {
+            color: white;
+            margin-top: 0px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        .r2 {
+            color: white;
+            margin-top: 15px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        .r3 {
+            color: white;
+            margin-top: 15px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        .r4 {
+            color: white;
+            margin-top: 15px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        .c1 {
+            color: white;
+            margin-top: 0px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        .c2 {
+            color: white;
+            margin-top: -20px;
+            margin-left: 250px;
+            font-size: 15px;
+        }
+
+        .c3 {
+            color: white;
+            margin-top: -20px;
+            margin-left: 500px;
+            font-size: 15px;
+        }
+
+        .c4 {
+            color: white;
+            margin-top: -20px;
+            margin-left: 750px;
+            font-size: 15px;
+        }
+
+        .ques1 {
+            background-color: #333;
+            height: 10px;
+            width: 800px;
+            max-width: 800px;
+            border-color: #333;
+            cursor: pointer;
+            position: relative;
+            left: 250px;
+            top: 15px;
+            text-align: left;
+            padding: 22px 50px 50px 22px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .ques2 {
+            background-color: #333;
+            height: 12px;
+            width: 800px;
+            max-width: 800px;
+            border-color: black;
+            cursor: pointer;
+            position: relative;
+            left: 250px;
+            top: 25px;
+            text-align: left;
+            padding: 22px 50px 50px 22px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .ques3 {
+            background-color: #333;
+            height: 10px;
+            width: 800px;
+            max-width: 800px;
+            border-color: #333;
+            cursor: pointer;
+            position: relative;
+            left: 250px;
+            top: 35px;
+            text-align: left;
+            padding: 22px 50px 50px 22px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .ques4 {
+            background-color: #333;
+            height: 10px;
+            width: 800px;
+            max-width: 800px;
+            border-color: #333;
+            cursor: pointer;
+            position: relative;
+            left: 250px;
+            top: 45px;
+            text-align: left;
+            padding: 22px 50px 50px 22px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .ques5 {
+            background-color: #333;
+            height: 10px;
+            width: 800px;
+            max-width: 800px;
+            border-color: #333;
+            cursor: pointer;
+            position: relative;
+            left: 250px;
+            top: 55px;
+            text-align: left;
+            padding: 20px 50px 50px 22px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .content1 {
+            display: none;
+        }
+
+        .content2 {
+            display: none;
+        }
+
+        .content3 {
+            display: none;
+        }
+
+        .content4 {
+            display: none;
+        }
+
+        .content5 {
+            display: none;
+        }
+
+        .makeviewcontent {
+            display: block;
+            margin-left: 247px;
+            margin-right: 224px;
+            font-size: 30px;
+            border-color: black;
+            padding: 15px 10px 10px 20px;
+            max-height: 550px;
+            overflow: hidden;
+            border-style: solid;
+            color: white;
+            transition: 0.2s ease-out;
+            background-color: #333;
+        }
+
+        #plus1 {
+            position: relative;
+            border: hidden;
+            left: 750px;
+            top: -90px;
+            font-size: 50px;
+            color: white;
+        }
+
+        #plus2 {
+            position: relative;
+            border: hidden;
+            left: 750px;
+            top: -90px;
+            font-size: 50px;
+            color: white;
+        }
+
+        #plus3 {
+            position: relative;
+            border: hidden;
+            left: 750px;
+            top: -90px;
+            font-size: 50px;
+            color: white;
+        }
+
+        #plus4 {
+            position: relative;
+            border: hidden;
+            left: 750px;
+            top: -90px;
+            font-size: 50px;
+            color: white;
+        }
+
+        #plus5 {
+            position: relative;
+            border: hidden;
+            left: 750px;
+            top: -90px;
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<div class="whole">
+
+    <body bgcolor="black" style="margin: 0%; height: 100%; overflow-x: hidden;">
+        <div style="position: relative; left: 0;top: 0;">
+            <img src="1st.jpg" alt="NetflixTV" width="1350" height="605" class="bgimg">
+            <img src="2st.jpg" alt="Netflix" width="120" height="35" class="net">
+            <div style="position: relative; left: 0;top: 0;">
+                <select name="lang" class="selectl"
+                    style="background-color: #000; background-image: url(lang.jpg);background-position: 2px ;background-size: 20px 20px;background-color: black; background-repeat: no-repeat;">
+                    <option value="English">&nbsp&nbsp&nbspEnglish</option>
+                    <option value="Hindi">&nbsp&nbsp&nbspHindi</option>
+            </div>
+            <div style="position: relative; left: 0;top: 0;">
+                <input type="button" class="signin" value="Sign In"></input>
+            </div>
+            <div
+                style="position: relative; left: 0px ;top: 100px;color: white;text-align: center;line-height: 60px;font-size: 55px;">
+                <p><b>Unlimited movies, TV<br> shows and more.</b></p>
+            </div>
+            <div style="position: relative; left: 0px ;top: 60px;color: white;text-align: center;font-size: 30px;">
+                <p>Watch anywhere. Cancel anytime.</p>
+            </div>
+            <div style="position: relative; left: 0px ;top: 60px;color: white;text-align: center;font-size: 23px;">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div style="position: relative; left: 0px ;top: 40px;color:black;text-align: center;font-size: 15px;">
+                <input type="text" placeholder="Email address" class="emil"></input>
+            </div>
+            <div style="position: relative; left: -8px;top: 0;">
+                <input type="button" class="start" value="Get Started&nbsp&nbsp&nbsp&nbsp&nbsp>"></input>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="hrbr"></div>
+        <div class="text">
+            <div
+                style="position: relative;text-align: center; left: 140px ;top: 50px;color: white;text-align: left;font-size: 50px;">
+                <p><b>Enjoy on your TV.</b></p>
+            </div>
+            <div
+                style="position: relative;text-align: center; left: 140px ;top: 30px;color: white;text-align: left;font-size: 27px;">
+                <p>Watch on smart TVs, PlayStation, Xbox, <br>Chromecast, Apple TV, Blu-ray players and <br>more.</p>
+                <div style="position: relative;left: 600px ;top: -280px;">
+                    <p><img src="3st.jpg"></p>
+                </div>
+            </div>
+        </div>
+        <div class="hrbr1"></div>
+        <div class="text">
+            <div style="position: relative;left: 200px ;top: 10px;">
+                <p><img src="4st.png"></p>
+            </div>
+            <div
+                style="position: relative;text-align: center; left: 750px ;top: -350px;color: white;text-align: left;font-size: 50px;">
+                <p><b>Download your shows <br>to watch offline.</b></p>
+            </div>
+            <div
+                style="position: relative;text-align: center; left: 750px ;top: -380px;color: white;text-align: left;font-size: 27px;">
+                <p>Save your favourites easily and always have <br>something to watch.
+                </p>
+            </div>
+        </div>
+        <div class="hrbr2"></div>
+        <div class="text">
+            <div
+                style="position: relative;text-align: center; left: 140px ;top: 80px;color: white;text-align: left;font-size: 50px;">
+                <p><b>Watch everywhere.</b></p>
+            </div>
+            <div
+                style="position: relative;text-align: center; left: 140px ;top: 60px;color: white;text-align: left;font-size: 27px;">
+                <p>Stream unlimited movies and TV shows on your <br>phone, tablet, laptop, and TV.</p>
+                <div style="position: relative;left: 600px ;top: -280px;">
+                    <p><img src="5st.png"></p>
+                </div>
+            </div>
+        </div>
+        <div class="hrbr2"></div>
+        <div class="text">
+            <div
+                style="position: relative;text-align: center; left: 330px ;top: 0px;color: white;text-align: left;font-size: 55px;">
+                <p><b>Frequently Asked Questions</b></p>
+            </div>
+        </div>
+        <div class="faqsection">
+            <div class="ques1" onclick="makeview1(this); myfun1(this);">What is Netflix?<p id="plus1">+</p>
+            </div>
+            <div class="content1" style="margin-top: 15px;margin-bottom: -20px;">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+                <br><br>You can watch as much as you want, whenever you want, without a single ad – all for one low
+                monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+            </div>
+            <div class="ques2" onclick="makeview1(this); myfun2(this);">How much does Netflix cost?<p id="plus2">+</p>
+            </div>
+            <div class="content2" style="margin-top: 25px;margin-bottom: -30px;">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                monthly fee.Plans range from ₹ 199 to ₹ 799 a month. No extra costs, no contracts.
+            </div>
+            <div class="ques3" onclick="makeview1(this); myfun3(this);">Where can I watch?
+                <p id="plus3">+</p>
+            </div>
+            <div class="content3" style="margin-top: 35px;margin-bottom: -40px;">
+                <p>
+                    Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to
+                    watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that 
+                    offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <br><br>
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to
+                    watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </p>
+            </div>
+            <div class="ques4" onclick="makeview1(this); myfun4(this);">How do I cancel?<p id="plus4">+</p>
+            </div>
+            <div class="content4" style="text-align: left; margin-top: 45px;margin-bottom: -50px;">
+                Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account
+                online in two clicks. There are no cancellation fees – start or stop your account anytime.
+            </div>
+            <div class="ques5" onclick="makeview1(this); myfun5(this);">What can I watch on Netflix?<p id="plus5">+</p>
+            </div>
+            <div class="content5" style="text-align: left;margin-top: 55px;margin-bottom: -60px;">
+                Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+                originals, and more. Watch as much as you want, anytime you want.
+            </div>
+        </div>
+</div>
+</div>
+<br>
+<br>
+<div style="position: relative; left: 0;top: 0;">
+    <div style="position: relative; left: 0px ;top: 60px;color: white;text-align: center;font-size: 23px;">
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    </div>
+    <div style="position: relative; left: 0px ;top: 40px;color:black;text-align: center;font-size: 15px;">
+        <input type="text" placeholder="Email address" class="emil"></input>
+    </div>
+    <div style="position: relative; left: -8px;top: 0;">
+        <input type="button" class="start" value="Get Started&nbsp&nbsp&nbsp&nbsp&nbsp>"></input>
+    </div>
+</div>
+<div class="hrbr3"></div>
+<div class="footer">
+    Questions? Call 000-800-040-1843<br><br>
+    <div class="bfooter">
+        <div class="r1">
+            <div class="c1">FAQ
+            </div>
+            <div class="c2">Help Centre
+            </div>
+            <div class="c3">Account
+            </div>
+            <div class="c4">Media Centre
+            </div>
+        </div>
+        <div class="r2">
+            <div class="c1">Investor Relations
+            </div>
+            <div class="c2">Jobs
+            </div>
+            <div class="c3">Ways to Watch
+            </div>
+            <div class="c4">Terms of Use</div>
+        </div>
+        <div class="r3">
+            <div class="c1">Privacy
+            </div>
+            <div class="c2">Cookie Preferences
+            </div>
+            <div class="c3">Corporate Information
+            </div>
+            <div class="c4">Contact Us
+            </div>
+        </div>
+        <div class="r4">
+            <div class="c1">Speed Test
+            </div>
+            <div class="c2">Legal
+            </div>
+            <div class="c3">Notices
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="bbfooter">
+            Netflix India</div>
+        <div style="position: relative; left: -1055px;top: -75px;">
+            <div style="position: relative; left: 0;top: 0;">
+                <select name="lang" class="selectl"
+                    style="background-color: #000; background-image: url(lang.jpg);background-position: 2px ;background-size: 20px 20px;background-color: black; background-repeat: no-repeat;">
+                    <option value="English">&nbsp&nbsp&nbspEnglish</option>
+                    <option value="Hindi">&nbsp&nbsp&nbspHindi</option>
+            </div>
+        </div>
+    </div><br>
+</div>
+</div>
+<script>
+    function makeview1(x) {
+        var n = x.nextElementSibling;
+        n.classList.toggle("makeviewcontent");
+        var main = document.querySelector(".faqsection");
+        for (var i = 1; i < 10;) {
+            console.log(main.children[i]);
+            if (n !== main.children[i]) {
+                main.children[i].classList.remove("makeviewcontent");
+                var d = i;
+            }
+            i = i + 2;
+        }
+    };
+    function myfun1(x) {
+        document.getElementById("plus2").innerHTML = "+";
+        document.getElementById("plus3").innerHTML = "+";
+        document.getElementById("plus4").innerHTML = "+";
+        document.getElementById("plus5").innerHTML = "+";
+        if (document.getElementById("plus1").innerHTML == "+") {
+            document.getElementById("plus1").innerHTML = "×";
+        }
+        else
+            document.getElementById("plus1").innerHTML = "+";
+    };
+    function myfun2(x) {
+        document.getElementById("plus3").innerHTML = "+";
+        document.getElementById("plus1").innerHTML = "+";
+        document.getElementById("plus4").innerHTML = "+";
+        document.getElementById("plus5").innerHTML = "+";
+        if (document.getElementById("plus2").innerHTML == "+") {
+            document.getElementById("plus2").innerHTML = "×";
+        }
+        else
+            document.getElementById("plus2").innerHTML = "+";
+    };
+    function myfun3(x) {
+        document.getElementById("plus2").innerHTML = "+";
+        document.getElementById("plus1").innerHTML = "+";
+        document.getElementById("plus4").innerHTML = "+";
+        document.getElementById("plus5").innerHTML = "+";
+        if (document.getElementById("plus3").innerHTML == "+") {
+            document.getElementById("plus3").innerHTML = "×";
+        }
+        else
+            document.getElementById("plus3").innerHTML = "+";
+    };
+    function myfun4(x) {
+        document.getElementById("plus2").innerHTML = "+";
+        document.getElementById("plus3").innerHTML = "+";
+        document.getElementById("plus1").innerHTML = "+";
+        document.getElementById("plus5").innerHTML = "+";
+        if (document.getElementById("plus4").innerHTML == "+") {
+            document.getElementById("plus4").innerHTML = "×";
+        }
+        else
+            document.getElementById("plus4").innerHTML = "+";
+    };
+    function myfun5(x) {
+        document.getElementById("plus2").innerHTML = "+";
+        document.getElementById("plus3").innerHTML = "+";
+        document.getElementById("plus4").innerHTML = "+";
+        document.getElementById("plus1").innerHTML = "+";
+        if (document.getElementById("plus5").innerHTML == "+") {
+            document.getElementById("plus5").innerHTML = "×";
+        }
+        else
+            document.getElementById("plus5").innerHTML = "+";
+    };
+</script>
+</body>
+
+</html>
